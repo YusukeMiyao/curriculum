@@ -19,6 +19,13 @@ public class Task1_2 {
          *   2番目の要素に 「もも」 を代入
          *   3番目の要素に 「ぶどう」 を代入
          */
+
+         /*String []strArray = new String [3];
+          * strArray[0]=りんご;
+          * strArray[1]=もも;
+          * strArray[2]=ぶどう;
+          */
+          
         String[]strArray={"りんご","もも","ぶどう"};
         // ④ ③で作成した配列の2番目の要素を出力しなさい。
         System.out.println(strArray[1]);
