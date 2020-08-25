@@ -14,7 +14,7 @@ return firstName+lastName;
 
 pt.introduce();
 
-RobotPet tp =new RobotPet("R2D2","ルーク");
+RobotPet tp =new RobotPet(constants.Constants.CHECK_CLASS_R2D2,constants.Constants.CHECK_CLASS_LUKE);
 
 
 tp.introduce();
