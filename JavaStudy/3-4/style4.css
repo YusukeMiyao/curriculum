@@ -1,0 +1,60 @@
+.header {
+    width: 350px;
+    height: 100px;
+}
+.header-left {
+    background-color: #ffff66;
+    width: 150px;
+    height: 100px;
+    float: left;
+}
+.header-right {
+    background-color: #666666;
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+.main {
+    width: 350px;
+    height: 150px;
+}
+.main-left {
+    background-color: #ff3333;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.main-center {
+    background-color: #3366ff;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+.main-right {
+    background-color: #669933;
+    width: 100px;
+    height: 150px;
+    float:right
+}
+.footer {
+    width: 350px;
+    height: 100px;
+}
+.footer-left {
+background-color:#ff9966;
+width: 150px;
+height: 100px;
+float: left;
+}
+.footer-center {
+    background-color: #ffffcc;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.footer-right {
+    background-color: #330066;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
