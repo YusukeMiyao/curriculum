@@ -7,6 +7,9 @@ public class Check {
 	private static String printName (String firstName,String lastName) {
 return firstName+lastName;
 	}
+	/**
+	 * @param args 名前の出力
+	 */
 	public static void main(String[] args) {
 		System.out.println("printNameメソッド→"+printName(firstName,lastName));
 
