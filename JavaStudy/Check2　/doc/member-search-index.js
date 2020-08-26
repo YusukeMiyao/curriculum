@@ -1,0 +1,1 @@
+memberSearchIndex = [{"l":"CHECK_CLASS_HOGE","h":"","u":""},{"l":"CHECK_CLASS_JAVA","h":"","u":""},{"l":"CHECK_CLASS_LUKE","h":"","u":""},{"l":"CHECK_CLASS_R2D2","h":"","u":""},{"l":"Check()","h":"","u":"%3Cinit%3E()"},{"l":"Constants()","h":"","u":"%3Cinit%3E()"},{"l":"main(String[])","h":"","u":"main(java.lang.String[])"}]
