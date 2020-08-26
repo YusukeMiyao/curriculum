@@ -36,7 +36,10 @@
     height: 40px;
     background-color: #a9004b;
 }
-
+.main {
+    width: 400px;
+    height: 250px;
+}
 .left{
     background-color: #80bfa8;
     width: 150px;
