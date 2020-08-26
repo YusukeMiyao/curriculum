@@ -18,11 +18,7 @@ RobotPet tp =new RobotPet(constants.Constants.CHECK_CLASS_R2D2,constants.Constan
 
 
 tp.introduce();
-
-
-
 	}
-
-    }
+}
 
 
