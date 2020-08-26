@@ -14,15 +14,19 @@
     .header-box-3 {
         position: absolute;top:110px;left:10px;
     }
+    .main {
+        height: 310px;
+    }
     .left {
         width: 200px;
         height: 100px;
-
+        float: none;
     }
     .right {
         width: 200px;
         height: 210px;
         padding: 20px 30px 20px 30px;
+        float: none;
     }
     .right-box-1 {
         width: 140px;
