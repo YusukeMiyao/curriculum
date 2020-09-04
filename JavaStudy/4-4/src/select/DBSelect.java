@@ -1,4 +1,4 @@
-package s12301800780;
+package select;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -45,7 +45,7 @@ public class DBSelect {
             		 JDBC_CONNECTION,USER,PASS);
             statement = connection.createStatement();
             // 問⑤ SHOHIN_IDが001と020のものを表示させるためのSQL文を記述しましょう。
-            String SQL = "select shohin_id,shohin_name from tb_shohin";
+            String SQL = "select * from tb_shohin where shohin_id= '001'or shohin_id='020';";
             resultSet = statement.executeQuery(SQL);
 
             while (resultSet.next()) {

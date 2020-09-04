@@ -1,23 +1,25 @@
-package s12301800780;
+package update;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 /**
  * ■ データベースに接続するプログラム
- * データベースへ接続し、指定(任意)の値を取得し、表示させる処理。
- * 問①〜⑤の回答をお願いします。
+ * データベースに接続し、テーブルの内容を変更する処理。
+ *
+ * 問①〜問⑥までを回答し、データベースと接続してみましょう。
+ * カリキュラム「データベースを扱うための準備」を参考にしてください。
  *
  * 実行結果の提出に関しては、
  * いつも通りソースのコミットしていただきますが、
  * 今回は実行結果のスクリーンショットも合わせて提出していただきます。
- * 画像名はDBPrepared.pngとして、4-4フォルダの中に入れ、これまでと同様に提出してください。
+ * 画像名はDBUpdate.pngとして、4-4フォルダの中に入れ、これまでと同様に提出してください。
  *
  */
 
-public class DBPrepared {
+public class DBUpdate {
 
     /** ドライバーのクラス名 */
     private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
@@ -44,17 +46,14 @@ public class DBPrepared {
             		 JDBC_CONNECTION,USER,PASS);
             statement = connection.createStatement();
 
-            String SQL = "SELECT * FROM TB_SHOHIN WHERE SHOHIN_ID = ? OR SHOHIN_ID = ? ";
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            // 問⑤ SHOHIN_IDが020のSHOHIN_NAMEを「商品20」に変更するためのSQL文を記述しましょう。
+            String SQL = "update tb_shohin set shohin_name = '商品20' where shohin_id ='020'";
 
-            /*
-             * 問⑤ SHOHIN_IDが001と020のものを表示できるように
-             *     PreparedStatementインターフェースを使って値をSQL文にセットしてみましょう。
-             */
-            preparedStatement.setString(001,"いちご");
-            preparedStatement.setString(020,"商品20");
-
-            resultSet = preparedStatement.executeQuery();
+            // 問⑥ 上記のSQL文を実行するための文を記述しましょう。
+             statement.executeUpdate(SQL);
+            //一覧表示
+            String SQLselect = "SELECT * FROM TB_SHOHIN";
+            resultSet = statement.executeQuery(SQLselect);
 
             while (resultSet.next()) {
                 String column1 = resultSet.getString("SHOHIN_ID");
@@ -76,9 +75,6 @@ public class DBPrepared {
 
         } finally {
             try {
-                if (resultSet != null) {
-                    resultSet.close();
-                }
                 if (statement != null) {
                     statement.close();
                 }

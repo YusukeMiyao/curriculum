@@ -21,7 +21,7 @@ public class EmployeeService {
     /** ドライバーのクラス名 */
     private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
     /** ・JDMC接続先情報 */
-    private static final String JDBC_CONNECTION = "ここを改修";
+    private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/check4";
     /** ・ユーザー名 */
     private static final String USER = "postgres";
     /** ・パスワード */
@@ -31,7 +31,7 @@ public class EmployeeService {
 
     // 問② 入力された値で、UPDATEする文
     /** ・SQL UPDATE文 */
-    private static final String SQL_UPDATE = "ここを改修";
+    private static final String SQL_UPDATE = "update ";
 
     // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
     /** ・SQL SELECT文 */
@@ -62,7 +62,7 @@ public class EmployeeService {
 
             /*
              *  任意のユーザーのログインタイムを更新できるように、プリペアドステートメントを記述。
-             */
+             */select login_time from employee_table
 
             // preparedStatementに実行したいSQLを格納
             preparedStatement = connection.prepareStatement(SQL_UPDATE);
