@@ -1,0 +1,120 @@
+.error-label {
+  color: red;
+}
+
+.common-btn-base {
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 0;
+  cursor: pointer;
+}
+
+.common-btn-base-hover {
+  background: #5881ba;
+}
+
+.common-btn-base-active {
+  -ms-transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.common-btn-blue {
+  background: #3f72b8;
+  box-shadow: 0px 3px 0px #4b5f89;
+  text-shadow: 1px 2px 1px #4b5f89;
+}
+
+.common-btn-disabled {
+  background: #d8d8d8;
+  box-shadow: 0px 3px 0px #bdbdbd;
+  text-shadow: 1px 2px 1px #bfbfbf;
+}
+
+.common-underline {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.common-underline-hover {
+  color: #7777ff;
+}
+
+body {
+  max-width: 448px;
+  width: 100%;
+  margin: auto;
+}
+
+body h2 {
+  color: #424242;
+}
+
+body .div-login-form {
+  background: #fcfcfc;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 0.4px lightgrey;
+  box-shadow: 0px 4px 10px lightgrey;
+}
+
+body .div-login-form .div-input-flex-area {
+  color: #424242;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: left;
+}
+
+body .div-login-form .div-input-flex-area div {
+  font-size: 16px;
+  height: 30px;
+}
+
+body .div-login-form .div-input-flex-area div label {
+  vertical-align: middle;
+}
+
+body .div-login-form .div-input-flex-area div input {
+  max-width: 76%;
+  width: 100%;
+  height: 20px;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+body .div-login-form .div-button-area {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body .div-login-form .div-button-area .btn-login {
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 0;
+  cursor: pointer;
+  background: #3f72b8;
+  box-shadow: 0px 3px 0px #4b5f89;
+  text-shadow: 1px 2px 1px #4b5f89;
+}
+
+body .div-login-form .div-button-area .btn-login:active {
+  -ms-transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+body .div-login-form .div-button-area .btn-login:hover {
+  background: #5881ba;
+}

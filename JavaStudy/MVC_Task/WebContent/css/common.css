@@ -1,0 +1,44 @@
+.error-label {
+  color: red;
+}
+
+.common-btn-base {
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 0;
+  cursor: pointer;
+}
+
+.common-btn-base-hover {
+  background: #5881ba;
+}
+
+.common-btn-base-active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.common-btn-blue {
+  background: #3f72b8;
+  box-shadow: 0px 3px 0px #4b5f89;
+  text-shadow: 1px 2px 1px #4b5f89;
+}
+
+.common-btn-disabled {
+  background: #d8d8d8;
+  box-shadow: 0px 3px 0px #bdbdbd;
+  text-shadow: 1px 2px 1px #bfbfbf;
+}
+
+.common-underline {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.common-underline-hover {
+  color: #7777ff;
+}
