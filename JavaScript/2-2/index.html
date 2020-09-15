@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="ボタン" onclick="changeBtn()">
+    <p id="p1" >ボタンが押されると表示非表示が切り替わります。</p>
+  
+    <script>
+        function changeBtn() {
+            // ①id「p1」の要素を取得
+            
+           
+         
+            // ②取得したp1に「display:none」が無かったら、「display:none」を付与する。
+            // 取得したp1に「display:none」があったら、「display:block」を付与する。
+            // if (document.getElementById('p1').style.display === "none")
+            if (document.getElementById('p1').style.display === 'block'){
+                document.getElementById('p1').style.display = 'none';
+            }else{document.getElementById('p1').style.display = 'block'}
+            
+        }
+    </script>
+</body>
+</html>

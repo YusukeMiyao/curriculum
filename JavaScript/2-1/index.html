@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="changebackgroundcolor()"></div>
+    <script>
+        // 問題①：idで要素を取得して、背景色を赤色に変更する処理を記述してください。
+        function changebackgroundcolor(){
+            if(  document.getElementById('box').style.background==='blue'){
+                document.getElementById('box').style.background='red';
+            }else{
+            document.getElementById('box').style.background='blue';}
+         }
+       
+
+    </script>
+</body>
+</html>
